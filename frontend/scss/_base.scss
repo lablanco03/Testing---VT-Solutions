@@ -1,0 +1,114 @@
+@use "variables" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: $background;
+    color: $text-color;
+}
+
+.header {
+    padding: 40px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    box-shadow: 0 4px 6px $shadow;
+}
+
+.hero-card {
+  background: linear-gradient(180deg, #2563EB 0%, #3389FF 100%);
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.12);
+}
+
+.hero-image {
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.12);
+}
+
+// Sección suave (fondo para novedades)
+.section-soft {
+  background: #EEF5FF;
+}
+
+// Categorías
+.cat-btn {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(17, 24, 39, 0.1);
+  }
+}
+
+.cat-icon {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #F3F4F6;
+  color: #111827;
+  font-weight: 700;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+}
+
+.vt-col-qty,
+.vt-col-price,
+.vt-col-total {
+  width: 140px;
+}
+
+.vt-thumb {
+  width: 84px;
+  height: 84px;
+}
+
+.vt-qty {
+  max-width: 130px;
+  margin: 0 auto;
+}
+
+.vt-coupon {
+  max-width: 320px;
+}
+
+/* Logo box reutilizable (ya tenemos .logo, pero si queremos mantener este estilo) */
+.vt-logo-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 0.75rem;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vt-logo-text {
+  color: #0d6efd; /* azul bootstrap */
+}
+
+/* Icono de check para checkout */
+.vt-check-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: rgba(13,110,253,.12);
+  color: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

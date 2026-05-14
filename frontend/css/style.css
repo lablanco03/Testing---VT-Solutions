@@ -1,0 +1,104 @@
+.navbar{
+  background: linear-gradient(180deg, #2563EB 0%, #3389FF 100%);
+}
+
+.footer-top{
+  background:#3389FF;
+}
+
+.footer-bottom{
+  background-color: #111827; 
+}
+
+.footer-link{
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  color: white;
+}
+
+.footer-top .logo{
+  height: 48px;
+  width: auto;
+  display: block;
+
+  /* Compensa el espacio vacío del SVG */
+  transform: scale(1.25);
+  transform-origin: left center;
+}
+
+@media (max-width: 768px){
+  .footer-top .logo{
+    height: 36px;
+    transform: scale(1.15);
+  }
+}
+.navbar .container-fluid{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Hero */
+.hero-card{
+  background: linear-gradient(180deg, #2563EB 0%, #3389FF 100%);
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.12);
+}
+
+.hero-image{
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.12);
+}
+
+/* Sección suave) */
+.section-soft{
+  background: #EEF5FF;
+}
+
+/* Productos */
+.product-img img{
+  height: 210px;
+  object-fit: cover;
+}
+
+.product-card{
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.product-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(17, 24, 39, 0.14) !important;
+}
+
+.add-btn{
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+}
+
+/* Categorías */
+.cat-btn{
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.cat-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.10);
+}
+
+.cat-icon{
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #F3F4F6;
+  color: #111827;
+  font-weight: 700;
+}
+
+
+
+

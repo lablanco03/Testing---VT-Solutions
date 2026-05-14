@@ -1,0 +1,24 @@
+1. Inicializar MongoDB
+2. Abrir MongoDB Compass y conectar la DB
+3. En VS Code (o editor de código de prefernecia) abrir una nueva terminal dentro del proyecto
+4. Ingresar a la carpeta "backend": cd backend
+5. Ejecutar el comando "npm run seed" para cargar DB (Si no funciona, puede ser porque haga falta ejecutar primero "npm install")
+6. Una vez ejecutado el primer comando, ejecutar también el comando "npm run dev" para levantar el servidor
+7. Abrir una nueva terminal dentro del proyecto
+8. Ingresar a la carpeta "frontend": cd frontend
+9. Ejecutar el comando "npx http-server -p 8080" para levantar un servidor web local
+10. Ingresar al enlace "http://localhost:8080" y probar la página web. ¡Espero les funcione!
+
+PD: Si no funcionan dichos enlaces, pueden ingresar a cualquiera de los 2 disponibles dentro de su terminal, los cuales serían:
+
+Available on:
+http://192.168.0.10:8080
+http://127.0.0.1:8080
+
+La diferencia principal es el alcance de quién puede ver tu página:
+
+http://127.0.0.1:8080 (Localhost): Es una dirección de "bucle invertido". Solo funciona dentro de tu propia computadora. Nadie más en tu red puede usar este enlace para ver tu trabajo; es como hablar contigo mismo.
+
+http://192.168.0.10:8080 (IP Privada): Es la dirección de tu computadora dentro de tu red local (Wi-Fi o cable). Si otro dispositivo (como tu celular o la laptop de un colega) está conectado al mismo Wi-Fi, puede entrar a ese enlace y ver el sitio que estás sirviendo.
+
+En resumen: usa el primero para pruebas rápidas tú solo, y el segundo cuando quieras ver cómo se ve tu página en otros dispositivos de tu casa u oficina.

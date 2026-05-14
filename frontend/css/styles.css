@@ -1,0 +1,206 @@
+:root {
+  --primary: #4f46e5;
+  --dark: #111827;
+  --dark-alt: #1e293b; /* fondo de contacto más agradable */
+  --light: #f9fafb;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BASE */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.6;
+  color: #111827;
+  background: white;
+}
+
+/* CONTAINER */
+.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.logo {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--primary), #6366f1);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero .container {
+  max-width: 700px;
+}
+
+.hero p {
+  margin: 16px 0 24px;
+  font-size: 1.05rem;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 0;
+}
+
+.bg-light {
+  background: var(--light);
+}
+
+.bg-dark {
+  background: var(--dark-alt); /* más agradable que negro puro */
+  color: white;
+}
+
+.bg-dark input,
+.bg-dark textarea {
+  background: #273449; /* contraste con el fondo */
+  color: white;
+  border: 1px solid #4f46e5;
+}
+
+/* HEADINGS */
+h2 {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.bg-dark .card {
+  background: #1f2937;
+}
+
+/* TEAM */
+.team .card {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.team .card::before {
+  content: "👤";
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #6366f1;
+  transform: translateY(-2px);
+}
+
+/* FORM */
+.form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* FOOTER */
+.footer {
+  background: #030712;
+  color: #9ca3af;
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.9rem;
+}

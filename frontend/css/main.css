@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #EEF4FF;
+  color: #1F2937;
+}
+
+.header {
+  padding: 40px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-card {
+  background: linear-gradient(180deg, #2563EB 0%, #3389FF 100%);
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.12);
+}
+
+.hero-image {
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.12);
+}
+
+.section-soft {
+  background: #EEF5FF;
+}
+
+.cat-btn {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.cat-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.1);
+}
+
+.cat-icon {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #F3F4F6;
+  color: #111827;
+  font-weight: 700;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+}
+
+.header h1 {
+  color: #3389FF;
+  margin-bottom: 8px;
+}
+.header p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.btn {
+  background: #3389FF;
+  border: 1px solid;
+  border-color: #F6F9FF;
+  color: white;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+.navbar {
+  background: linear-gradient(180deg, #2563EB 0%, #3389FF 100%);
+}
+
+.footer-top {
+  background: #3389FF;
+}
+
+.footer-bottom {
+  background-color: #111827;
+}
+
+.footer-link {
+  color: #d1d5db;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: white;
+}
+
+.footer-top .logo {
+  height: 48px;
+  width: auto;
+  display: block;
+  transform: scale(1.25);
+  transform-origin: left center;
+}
+@media (max-width: 768px) {
+  .footer-top .logo {
+    height: 36px;
+    transform: scale(1.15);
+  }
+}
+
+.navbar .logo {
+  height: 48px;
+  width: auto;
+  display: block;
+  transform: scale(1.25);
+  transform-origin: left center;
+}
+@media (max-width: 768px) {
+  .navbar .logo {
+    height: 36px;
+    transform: scale(1.15);
+  }
+}
+
+.product-card {
+  transition: transform 0.2s;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.detalle-cantidad {
+  max-width: 100px;
+}
+
+.contact-box {
+  background-color: #F6F9FF;
+  border: 1px solid #c3d7ff;
+  border-radius: 12px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto; /* la imagen define su altura */
+  object-fit: contain; /* aunque con height auto no es necesario, pero se deja por si acaso */
+}
+
+

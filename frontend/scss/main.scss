@@ -1,0 +1,92 @@
+// Variables
+@use "variables" as *;
+@use "base";
+@use "componentes";
+
+// Estilos personalizados
+.header {
+    h1 {
+        color: $primary;
+        margin-bottom: 8px;
+    }
+    p {
+        margin-top: 10px;
+        opacity: 0.8;
+    }
+}
+
+.btn {
+    background: $primary;
+    border: 1px solid;
+    border-color: $input-bg;
+    color: white;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+// 4. Estilos de header y footer
+.navbar {
+    background: linear-gradient(180deg, #2563EB 0%, #3389FF 100%);
+}
+
+.footer-top {
+    background: #3389FF;
+}
+
+.footer-bottom {
+    background-color: #111827;
+}
+
+.footer-link {
+    color: #d1d5db;
+    text-decoration: none;
+    &:hover {
+        color: white;
+    }
+}
+
+.footer-top .logo {
+    height: 48px;
+    width: auto;
+    display: block;
+    transform: scale(1.25);
+    transform-origin: left center;
+
+    @media (max-width: 768px) {
+        height: 36px;
+        transform: scale(1.15);
+    }
+}
+
+.navbar .logo {
+    height: 48px;
+    width: auto;
+    display: block;
+    transform: scale(1.25);
+    transform-origin: left center;
+
+    @media (max-width: 768px) {
+        height: 36px;
+        transform: scale(1.15);
+    }
+}
+
+// Estilos de catálogo y detalle
+.product-card {
+    transition: transform 0.2s;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+    }
+}
+
+.detalle-cantidad {
+    max-width: 100px;
+}
+
+.contact-box {
+    background-color: #F6F9FF;
+    border: 1px solid darken(#F6F9FF, 10%);
+    border-radius: 12px;
+}
