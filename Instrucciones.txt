@@ -22,3 +22,5 @@ http://127.0.0.1:8080 (Localhost): Es una dirección de "bucle invertido". Solo 
 http://192.168.0.10:8080 (IP Privada): Es la dirección de tu computadora dentro de tu red local (Wi-Fi o cable). Si otro dispositivo (como tu celular o la laptop de un colega) está conectado al mismo Wi-Fi, puede entrar a ese enlace y ver el sitio que estás sirviendo.
 
 En resumen: usa el primero para pruebas rápidas tú solo, y el segundo cuando quieras ver cómo se ve tu página en otros dispositivos de tu casa u oficina.
+
+Nota: esta versión es la que será usada para el análisis estático en SonarQube Cloud
